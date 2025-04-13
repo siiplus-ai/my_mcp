@@ -1,0 +1,20 @@
+{
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "mcp_path",
+            "description": "Generate File Path",
+            "password": false
+          }
+    ],
+    "servers": {
+      "calculate": {
+        "command": "my_mcp",
+        "args": [],
+        "env": {
+                "MCP_PATH": "${input:mcp_path}",
+                "WORK_SPACE_FOLDER": "/mnt/c/Users/playm/dev/my_mcp"
+            },
+        }
+    }
+}
