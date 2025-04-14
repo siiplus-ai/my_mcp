@@ -9,7 +9,7 @@
     ],
     "servers": {
       "calculate": {
-        "command": "my_mcp",
+        "command": "${workspaceFolder}/my_mcp",
         "args": [],
         "env": {
                 "MCP_PATH": "${input:mcp_path}",
